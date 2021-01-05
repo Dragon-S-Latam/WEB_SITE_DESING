@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <link rel="stylesheet" href="/styles/pagefonts.css">
+</head>
+
+<body>
+    <input type="checkbox" id="check">
+    <main>
+        <label for="check">
+            <i class="fas fa-bars" id="slidebar_btn"></i>
+        </label>
+        <div class="left_area">
+            <a href="/index.html">
+                <h3>UE<span>Arturo Borja</span></h3>
+            </a>
+        </div>
+    </main>
+    <div class="slidebar">
+        <center>
+            <img src="/Rosurce/image/buo.jfif" class="profile_image" alt="">
+            <h4 class="Name_sing">Bienvenido</h4>
+        </center>
+        <label for="radio1"><i class="far fa-newspaper"></i><span>Noticias</span></label>
+        <label for="radio2"><i class="fas fa-cogs"></i><span>Components</span></label>
+        <label for=""><i class="fas fa-table"></i><span>Tables</span></label>
+        <label for=""><i class="fas fa-th"></i><span>Forms</span></label>
+        <label for=""> <i class="fas fa-info-circle"></i><span>Recursos Electronicos</span></label>
+        <label for=""> <i class="fas fa-sliders-h"></i><span>Settings</span></label>
+    </div>
+
+
+
+
+
+
+
+    <!--
+
+
+       Input
+
+
+    -->
+    <article class="contenedor">
+        <input type="radio" name="radio" id="radio1">
+        <div class="section">
+            <header>
+                <div class="logo">
+                    <h1>Noticias</h1>
+                    <p>Desarrollador Web</p>
+                </div>
+                <form action="">
+                    <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+                </form>
+                <div class="categorias" id="categorias">
+                    <a href="#" class="activo">Todos</a>
+                    <a href="#">Naturaleza</a>
+                    <a href="#">Ciudades</a>
+                    <a href="#">Personas</a>
+                    <a href="#">Animales</a>
+                </div>
+            </header>
+
+            <section class="grid" id="grid">
+                <div class="item" data-categoria="ciudades" data-etiquetas="ciudades autos carros calles"
+                 data-descripcion="<h3>Tecnology<h3/>
+                 <h5>4 de Noviembre del 2020</h5>
+                 <h6>BY: Adrian</h6>
+                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, eaque voluptatem obcaecati nihil reiciendis incidunt earum, unde repudiandae sequi id corporis. Est quia excepturi rem tenetur recusandae similique ut odit?</p>
+                                                                                                                                             ">
+                    <div class="item-contenido">
+                        <img src="/Rosurce/image/product1.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="item" data-categoria="personas" data-etiquetas="personas mujeres" data-descripcion="2.- Lorem ipsum dolor sit amet consectetur.">
+                    <div class="item-contenido">
+                        <img src="/Rosurce/image/product2.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="item" data-categoria="paisajes" data-etiquetas="cuchara" data-descripcion="3.- Lorem ipsum dolor sit amet consectetur.">
+                    <div class="item-contenido">
+                        <img src="/Rosurce/image/product3.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="item" data-categoria="animales" data-etiquetas="animales leones" data-descripcion="4.- Lorem ipsum dolor sit amet consectetur.">
+                    <div class="item-contenido">
+                        <img src="/Rosurce/image/product4.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="item" data-categoria="animales" data-etiquetas="stiven" data-descripcion="5.- Lorem ipsum dolor sit amet consectetur.">
+                    <div class="item-contenido">
+                        <img src="/Rosurce/image/stiven.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="item" data-categoria="personas" data-etiquetas="personas mujeres" data-descripcion="6.- Lorem ipsum dolor sit amet consectetur.">
+                    <div class="item-contenido">
+                        <img src="img/persona2.png" alt="">
+                    </div>
+                </div>
+
+                <div class="item" data-categoria="paisajes" data-etiquetas="paisajes montañas niebla" data-descripcion="7.- Lorem ipsum dolor sit amet consectetur.">
+                    <div class="item-contenido">
+                        <img src="img/paisaje2.png" alt="">
+                    </div>
+                </div>
+
+                <div class="item" data-categoria="ciudades" data-etiquetas="ciudades paisajes carreteras" data-descripcion="8.- Lorem ipsum dolor sit amet consectetur.">
+                    <div class="item-contenido">
+                        <img src="img/ciudad2.png" alt="">
+                    </div>
+                </div>
+
+                <div class="item" data-categoria="naturaleza" data-etiquetas="naturaleza hojas plantas" data-descripcion="9.- Lorem ipsum dolor sit amet consectetur.
+                         ">
+                    <div class="item-contenido">
+                        <img src="img/naturaleza1.png" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <section class="overlay" id="overlay">
+                <div class="contenedor-img">
+                    <button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+                    <img src="" alt="">
+                </div>
+                <p class="descripcion"></p>
+            </section>
+        </div>
+
+
+       <div class="container">
+        <input type="radio" name="radio" id="radio2">
+        <div class="section2">
+            <h3>asad</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque sed voluptate culpa sit earum aliquam asperiores vero amet sint voluptatibus fugiat deleniti, distinctio assumenda sequi. Non ad corrupti quos quae?</p>
+        </div>
+       </div>
+
+    </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+    <script src="/Js/notice.js"></script>
+
+</body>
+
+</html>
