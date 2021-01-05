@@ -102,6 +102,7 @@ header {
     }
     &.sticky .social-bar {
         opacity: 1;
+
     }
     & ul {
         position: relative;
@@ -373,9 +374,16 @@ $animationSpeed: 40s;
             &:hover {
                 text-shadow: 0 0 20px #fff, 0 0 50px #fff, 0 0 80px #fff;
                 transition: 0.9s;
-            }
-        }
+            }}
+        &.sticky .social-bar {
+            opacity: 1;
+            display: flex;
+      flex-direction: column;
+       align-items: flex-end; 
+       font-size: 1.5rem;
+           
     }
+}
     header,
     header.sticky {
         padding: 20px 50px;
@@ -459,6 +467,19 @@ $animationSpeed: 40s;
     .slider {
         width: 400px;
     }
+    .social-bar {
+        position: fixed;
+        font-size: 1.5rem;
+        opacity: 0;
+        display: none;
+    }
+    .carousel-item{
+        width: 100%;
+        img{
+            height: 400px;
+        }
+    }
+    
 }
 
 .carousel-inner img {
