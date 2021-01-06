@@ -642,4 +642,31 @@ header .fas {
   background-color: #2196f3;
   border: 1px solid #339dc5;
 }
+
+.card-img-filter {
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+}
+
+.card {
+  -webkit-transition-duration: .6s;
+          transition-duration: .6s;
+  -webkit-clip-path: polygon(50% 0, 100% 0, 100% 50%, 100% 100%, 50% 100%, 0% 100%, 0 50%, 0 0);
+          clip-path: polygon(50% 0, 100% 0, 100% 50%, 100% 100%, 50% 100%, 0% 100%, 0 50%, 0 0);
+}
+
+.card-effect:hover .card {
+  -webkit-clip-path: polygon(50% 0, 50% 0, 100% 50%, 100% 50%, 50% 100%, 50% 100%, 0 50%, 0 50%);
+          clip-path: polygon(50% 0, 50% 0, 100% 50%, 100% 50%, 50% 100%, 50% 100%, 0 50%, 0 50%);
+}
+
+.card-img-overlay {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.card-effect:hover .card-img-overlay {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
 /*# sourceMappingURL=styles.css.map */
