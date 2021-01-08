@@ -396,6 +396,7 @@ $animationSpeed: 40s;
     header,
     header.sticky {
         padding: 20px 50px;
+        width: 540px;
     }
     .menu {
         position: fixed;
@@ -412,6 +413,7 @@ $animationSpeed: 40s;
         border-top: 1px solid rgba(0, 0, 0, 0.2);
         &.active {
             left: 0;
+            width: 540px;
         }
     }
     header ul li a {
@@ -557,4 +559,18 @@ $animationSpeed: 40s;
     }
     .card-effect:hover .card-img-overlay{
         transform: scale(0.9);
+    }
+    .banner_map{
+   animation: movimiento 2.5s linear infinite;
+    }
+    @keyframes movimiento{
+0%{
+    transform: translateY(0);
+}
+50%{
+    transform: translateY(30px);
+}
+100%{
+    transform: translateY(0);
+}
     }

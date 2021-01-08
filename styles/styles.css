@@ -516,6 +516,7 @@ header .fas {
   header,
   header.sticky {
     padding: 20px 50px;
+    width: 540px;
   }
   .menu {
     position: fixed;
@@ -534,6 +535,7 @@ header .fas {
   }
   .menu.active {
     left: 0;
+    width: 540px;
   }
   header ul li a {
     color: #fff;
@@ -673,5 +675,40 @@ header .fas {
 .card-effect:hover .card-img-overlay {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
+}
+
+.banner_map {
+  -webkit-animation: movimiento 2.5s linear infinite;
+          animation: movimiento 2.5s linear infinite;
+}
+
+@-webkit-keyframes movimiento {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes movimiento {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 /*# sourceMappingURL=styles.css.map */
