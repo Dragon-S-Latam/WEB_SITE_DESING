@@ -393,6 +393,14 @@ $animationSpeed: 40s;
            
     }
 }
+.container_map{
+    & .banner_map{
+        width: 400px;
+    }
+    & .mapa{
+        width: 400px;
+    }
+}
     header,
     header.sticky {
         padding: 20px 50px;

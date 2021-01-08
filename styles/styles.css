@@ -513,6 +513,12 @@ header .fas {
             align-items: flex-end;
     font-size: 1.5rem;
   }
+  .container_map .banner_map {
+    width: 400px;
+  }
+  .container_map .mapa {
+    width: 400px;
+  }
   header,
   header.sticky {
     padding: 20px 50px;
