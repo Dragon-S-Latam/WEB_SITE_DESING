@@ -11,6 +11,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 a {
@@ -430,9 +431,10 @@ label #slidebar_btn {
   }
 }
 
-.section, .section2 {
+.section, .section2, .section3 {
   visibility: hidden;
   opacity: 0;
+  display: none;
 }
 
 .container {
@@ -440,13 +442,74 @@ label #slidebar_btn {
 }
 
 #radio1,
-#radio2 {
+#radio2,
+#radio3 {
   display: none;
 }
 
 #radio1:checked ~ .section,
-#radio2:checked ~ .section2 {
+#radio2:checked ~ .section2,
+#radio3:checked ~ .section3 {
   opacity: 1;
   visibility: visible;
+  display: contents;
+}
+
+.gallery-container {
+  padding: 2em;
+  max-width: 1200px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1.5em;
+}
+
+.gallery__item {
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  background: red;
+}
+
+.gallery__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+/*efecto hover*/
+.gallery__item::before {
+  content: url("/Rosurce/icons/eye.svg");
+  position: absolute;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+  opacity: 0;
+}
+
+.gallery__item:hover .gallery__img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  opacity: 0.4;
+}
+
+.gallery__item:hover:before {
+  opacity: 1;
 }
 /*# sourceMappingURL=pagefonts.css.map */

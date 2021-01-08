@@ -10,6 +10,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     
 }
 
@@ -406,21 +407,67 @@ label #slidebar_btn {
 
 }
 
-.section ,.section2 {
+.section ,.section2,.section3 {
     visibility: hidden;
     opacity: 0;
+    display: none;
 }
 .container{
    display: block;
 }
 
 #radio1,
-#radio2 {
+#radio2,
+#radio3 {
     display: none;
 }
 
 #radio1:checked~.section,
-#radio2:checked~.section2 {
+#radio2:checked~.section2,
+#radio3:checked~.section3 {
     opacity: 1;
     visibility: visible;
+    display: contents;
+  
+
+}
+.gallery-container{
+    padding: 2em;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap:1.5em;
+}
+.gallery__item{
+    width: 100%;
+    height:100%;
+   max-width: 400px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+   background: red;
+ 
+}
+.gallery__img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .5s;
+}
+/*efecto hover*/
+.gallery__item::before{
+    content: url("/Rosurce/icons/eye.svg");
+    position: absolute;
+    filter: invert(100%);
+    opacity: 0;
+}
+.gallery__item:hover .gallery__img{
+    transform: scale(1.2);
+    filter: blur(2px);
+    opacity: 0.4;
+}
+.gallery__item:hover:before{
+    opacity: 1;
 }
