@@ -516,7 +516,7 @@ header .fas {
   header,
   header.sticky {
     padding: 20px 50px;
-    width: 540px;
+    /*width: 540px;*/
   }
   .menu {
     position: fixed;
@@ -535,7 +535,7 @@ header .fas {
   }
   .menu.active {
     left: 0;
-    width: 540px;
+    /*width: 540px;*/
   }
   header ul li a {
     color: #fff;

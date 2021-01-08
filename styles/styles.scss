@@ -396,7 +396,7 @@ $animationSpeed: 40s;
     header,
     header.sticky {
         padding: 20px 50px;
-        width: 540px;
+        /*width: 540px;*/
     }
     .menu {
         position: fixed;
@@ -413,7 +413,7 @@ $animationSpeed: 40s;
         border-top: 1px solid rgba(0, 0, 0, 0.2);
         &.active {
             left: 0;
-            width: 540px;
+            /*width: 540px;*/
         }
     }
     header ul li a {
