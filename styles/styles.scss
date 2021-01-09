@@ -531,8 +531,54 @@ $animationSpeed: 40s;
         }
     }
 }
+/*Map*/
+/********** section 1 **************/
+
+.section-1 {
+    padding: 20vmin 0vmin;
+    overflow-x: hidden;
+    & .row .col-md-6 .pray img {
+        opacity: 0.8;
+        width: 80%;
+        border-radius: 0.2em;
+    }
+      & .row .col-md-6:last-child {
+        position: relative;
+      }
+      
+       & .row .col-md-6 .panel {
+        position: absolute;
+        top: 7vmin;
+        left: -18vmin;
+        background: white;
+        border-radius: 3px;
+        text-align: left;
+        padding: 13vmin 5vmin 20vmin 10vmin;
+        box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+        font-family: var(--Rubik);
+        z-index: 1;
+      }
+      
+       & .row .col-md-6 .panel h1 {
+        font-weight: bold;
+        padding: 0.4em 0;
+        font-size: 2em;
+      }
+      
+       & .row .col-md-6 .panel p {
+        font-size: 0.9em;
+        color: rgba(0, 0, 0, 0.5);
+      }
+
+  }
+  
+ 
+  
+  
+  
 
 
+/*Animacion de tarjetas*/
 .card-img-filter{
     filter: brightness(0.5);
     }
@@ -568,6 +614,9 @@ $animationSpeed: 40s;
     .card-effect:hover .card-img-overlay{
         transform: scale(0.9);
     }
+
+
+/*Animation of cat*/
     .banner_map{
    animation: movimiento 2.5s linear infinite;
     }
